@@ -1,0 +1,65 @@
+/*リスト表示*/
+ul {
+	width: 200px;
+	margin: 200 10 0 15%;/*or 200 0 0 200*/
+	padding: 0;
+	list-style-type: none;
+	background-color: #eeeeee;
+    float:left;
+}
+li a {
+	display: block;
+	padding: 8px 16px;
+	text-decoration: none;
+	color: #000000;
+}
+li {
+	text-align: center;
+}
+li:last-child {
+	border-bottom: none;
+}
+li a.active {
+	color: #ffffff;
+	background-color: #da3c41;
+}
+li a:hover:not(.active) {
+	color: #ffffff;
+	background-color: #1b2538;
+}
+/*文章背景*/
+.back {
+  position:relative;
+  display:inline-block;
+  top:70px;
+}
+/*文章の位置　詳細*/
+.main {
+  position:absolute; 
+  left:60px;
+  top:100px; 
+  right:50px;  
+}
+
+h1 {
+  /*線の種類（実線） 太さ 色*/
+  border-bottom: solid 3px black;
+  text-align: center;
+  font-size:50px;
+} 
+h2 {
+  /*線の種類（二重線）太さ 色*/
+  border-bottom: double 5px #FFC778;
+}
+h3 {
+  padding: 0.25em 0.5em;/*上下 左右の余白*/
+  color: #494949;/*文字色*/
+  background: transparent;/*背景透明に*/
+  border-left: solid 5px #7db4e6;/*左線*/
+}
+
+p {
+  font-size:16px;
+  line-height:140%;
+}
+

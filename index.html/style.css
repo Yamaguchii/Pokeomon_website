@@ -1,0 +1,166 @@
+/*スライドショー処理*/
+.cp_cssslider {
+	width: 300px;
+	height: 200px;
+	overflow: hidden;
+	margin: 5em auto;
+	border: 10px solid #cd853f;
+	box-shadow:0px 0px 5px 0px rgba(0,0,0,0.5);
+}
+.cp_slide_item {
+	width: 300px;
+	height: 200px;
+	float: left;
+	position: relative;
+}
+.cp_slidewrapper {
+	width: 800%;/* slideの枚数×100% */
+	position: relative;
+	left: 0;
+	animation: slider 25s infinite ease;/* スピード */
+}
+@-webkit-keyframes slider {
+	/* 100%を枚数で割った%に割り振る */
+	0% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+	12.5% {
+	-webkit-transform: translateX(-300px);
+	transform: translateX(-300px);
+	}
+	25% {
+	-webkit-transform: translateX(-600px);
+	transform: translateX(-600px);
+	}
+	37.5% {
+	-webkit-transform: translateX(-900px);
+	transform: translateX(-900px);
+	}
+	50% {
+	-webkit-transform: translateX(-1200px);
+	transform: translateX(-1200px);
+	}
+	62.5% {
+	-webkit-transform: translateX(-1500px);
+	transform: translateX(-1500px);
+	}
+	75% {
+	-webkit-transform: translateX(-1800px);
+	transform: translateX(-1800px);
+	}
+	87.5% {
+	-webkit-transform: translateX(-2100px);
+	transform: translateX(-2100px);
+	}
+	100% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+
+}
+@keyframes slider {
+	/* 100%を枚数で割った%に割り振る */
+	0% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+	12.5% {
+	-webkit-transform: translateX(-300px);
+	transform: translateX(-300px);
+	}
+	25% {
+	-webkit-transform: translateX(-600px);
+	transform: translateX(-600px);
+	}
+	37.5% {
+	-webkit-transform: translateX(-900px);
+	transform: translateX(-900px);
+	}
+	50% {
+	-webkit-transform: translateX(-1200px);
+	transform: translateX(-1200px);
+	}
+	62.5% {
+	-webkit-transform: translateX(-1500px);
+	transform: translateX(-1500px);
+	}
+	75% {
+	-webkit-transform: translateX(-1800px);
+	transform: translateX(-1800px);
+	}
+	87.5% {
+	-webkit-transform: translateX(-2100px);
+	transform: translateX(-2100px);
+	}
+	100% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+
+}
+
+h1{
+    font-size:400%;
+    padding: 0.3em;
+    background: aliceblue;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.23);
+}
+/*背景２*/
+.relative {
+    position: relative;
+}
+/*画像をクリックで次ページへ*/
+.absolute {
+    position: absolute;
+    top:100;
+    left:40%;
+}
+.absolute2 {
+    position: absolute;
+    top:300;
+    left:40%;
+}
+.absolute3 {
+    position: absolute;
+    top:500;
+    left:40%;
+}
+
+.absolute4 {
+    position: absolute;
+    top:700;
+    left:40%;
+}
+.absolute5 {
+    position: absolute;
+    top:900;
+    left:40%;
+}
+.absolute6 {
+    position: absolute;
+    top:1100;
+    left:40%;
+}
+.absolute7 {
+    position: absolute;
+    top:1330;
+    left:40%;
+}
+.absolute8 {
+    position: absolute;
+    top:1530;
+    left:40%;
+}
+/*文章背景*/
+.test{
+    background-image:url("img/haikei22.jpg");
+    background-position:center;
+    width:1000;
+    height:300;
+}
+/*クリックの際の処理*/
+.button:hover{
+	opacity:0.5;
+}
+
